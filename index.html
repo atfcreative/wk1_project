@@ -2,94 +2,124 @@
 <html>
 <head>
 	<meta charset="utf-8">
-  <title>Monument Final Project</title>
+  <title>Monument Magazine</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <link rel="stylesheet" type="favicon" href="images/favicon.ico">
+  <link rel="icon" type="image/ico" href="images/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="dist/jquery.fancybox.css">
   <link rel="stylesheet" href="css/normalize.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-<body>
+<body>	
+	<a href="#" class="hamburger"><i class="fa fa-bars"></i></a>
 		<nav class="nav">
 			<ul>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Gallery</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#" class="last">Contact</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#blog">Blog</a></li>
+				<li><a href="#contact" class="last">Contact</a></li>
 			</ul>
 		</nav>
 	<div class="landing">
-		<header>
 			<h1>Monument</h1>
 			<h2>A Lifestyle Magazine</h2>
-		</header>
 	</div> <!-- close .landing --->
 
 	<main>
-		<h2>From the Archive</h2>
-		<div class="container">
+		<h2>From the Archive</h2><a name="blog">
+		<div class="row">
 			<div class="col_3">
-				<img src="images/article1.jpg" alt="Cactus" />
+				<img src="images/article_1.jpg" alt="Cactus" />
 				<h3>Issue Twenty- The Southwest</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				<button><a href="#">READ MORE</a></button>
 			</div><!--- c .col_3--->
 
 			<div class="col_3">
-				<img src="images/article2.jpg" alt="Fire" />
+				<img src="images/article_2.jpg" alt="Fire" />
 				<h3>Issue Nineteen- Camping</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<button><a href="#">READ MORE</a></button>
+				<button class="archive"><a href="#">READ MORE</a></button>
 			</div><!--- c .col_3--->
-			<div class="col_3">
-				<img src="images/article3.jpg" alt="Plate" />
+			<div class="col_3 col_last">
+				<img src="images/article_3.jpg" alt="Plate" />
 				<h3>Issue Eightteen- Food</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<button><a href="#">READ MORE</a></button>
+				<button class="archive"><a href="#">READ MORE</a></button>
 			</div><!--- c .col_3--->
 		</div><!-- close .container --->
+	</main>
 
-		<section class="blue-bg">
+		<section class="blue-bg"><a name="about">
 			<h2>About the Magazine</h2>
 			<h3>A Lifestyle Magazine Created with Love</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</section>
 
-		<div class="gallery">
+		<div class="gallery-container"><a name="gallery">
 			<h1>Issue Twenty</h1>
 			<h2>A Visual Guide to the Southwest</h2>
-			<img src="images/galelry1.jpg" alt="" />
-			<img src="images/galelry2.jpg" alt="" />
-			<img src="images/galelry3.jpg" alt="" />
-			<img src="images/galelry4.jpg" alt="" />
-			<img src="images/galelry5.jpg" alt="" />
-			<img src="images/galelry6.jpg" alt="" />
+			
+				<div class="row">
+					<div class="col_3">
+						<a href="images/gallery_1_lg.jpg" data-fancybox="gallery"><img src="images/gallery_1.jpg" alt="" /></a>
+						<a href="images/gallery_2_lg.jpg" data-fancybox="gallery"><img src="images/gallery_2.jpg" alt="" /></a>
+						<!--<a href="#"><img src="images/gallery_1.jpg" alt="" /></a>
+						<a href="#"><img src="images/gallery_2.jpg" alt="" /></a>-->
+					</div><!-- close col3-->
+					<div class="col_3">
+						<a href="images/gallery_3_lg.jpg" data-fancybox="gallery"><img src="images/gallery_3.jpg" alt="" /></a>
+						<a href="images/gallery_4_lg.jpg" data-fancybox="gallery"><img src="images/gallery_4.jpg" alt="" /></a>
+						<!--<a href="#"><img src="images/gallery_3.jpg" alt="" /></a>
+						<a href="#"><img src="images/gallery_4.jpg" alt="" /> -->
+					</div><!-- close col3--->
+					<div class="col_3">
+						<a href="images/gallery_5_lg.jpg" data-fancybox="gallery"><img src="images/gallery_5.jpg" alt="" /></a>
+						<a href="images/gallery_6_lg.jpg" data-fancybox="gallery"><img src="images/gallery_6.jpg" alt="" /></a>
+						<!-- <a href="#"><img src="images/gallery_5.jpg" alt="" /></a>
+						<a href="#"><img src="images/gallery_6.jpg" alt="" /></a> -->
+					</div><!-- close col3--->
+				</div><!-- close .row --->
+
 		</div><!-- close .gallery --->
 
-		<div class="form">
+		<!-- Start contact form --->
+		
+		<section><a name="contact">
+		<form class="contact-form">
 			<h2>Get in Touch</h2>
-			<form>
-				<input type="name" value="name" placeholder="" />
-				<input type="email" value="email" placeholder="" />
-				<input type="text" value="subject" placeholder="" />
-				<textarea></textarea>
-				<button type="submit" value="submit"></button>
-			</form>
-		</div><!-- close .form--->
+				
+					<input type="name" placeholder="Full Name" />
+					<input type="email" placeholder="Email" />
+					<input type="text" placeholder="Subject" />
+				
 
-	</main>
+				<textarea placeholder="Message"></textarea>
+				<button type="submit" class="submit">Submit</button>
+			</form>
+		
+		</section>
 
 		<footer>
-			<div class="social">
-				<span class="icons"><i class="fab fa-facebook-square"></i></span>
-				<span class="icons"><span class="icons"><i class="fab fa-twitter-square"></i></span>
-				<span class="icons"><i class="fab fa-instagram"></i></span>
+			<div>
+				<span class="icons"><i class="fab fa-facebook-square fa-2x"></i></span>
+				<span class="icons"><span class="icons"><i class="fab fa-twitter-square fa-2x"></i></span>
+				<span class="icons"><i class="fab fa-instagram fa-2x"></i></span>
 			</div>
-			<input type="email" value="email" class="email">
-			<button type="submit" value="Subscribe"></button>
+
+				<form class="footer-form">
+					<div>
+					<input type="email" placeholder="email" class="small">
+					<button type="submit" value="Subscribe" class="small">Subcribe</button>
+				</div><!-- close row --->
+				</form>
 			<hr />
-			<p>&copy 2018 Andrew Foster</p>
+				<p>&copy 2018 <span class="ga-logo"></span>General Assembly</p>
 		</footer>
+<!-- JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="dist/jquery.fancybox.min.js"></script>
 </body>
 </html>
